@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #D1FFD1;
+    background: url('assets/green_dark.png') no-repeat center center/cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: absolute !important;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 90%;
+    width: 800px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #9CFF00;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    background: #00FF7F;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #1B1B1B;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-content .btn:hover {
+    background: #00CC66;
+}
+
+#sobre {
+    padding: 80px 20px;
+    background: #0B1B0B;
+    color: #D1FFD1;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sobre-card, .linguagens-card {
+    background: #0C2C0C;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 450px;
+    text-align: left;
+}
+
+.linguagem-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.linguagem-list span {
+    background: #1B4D1B;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #D1FFD1;
+    font-weight: bold;
+}
+
+#projetos {
+    padding: 80px 20px;
+    background: #081B08;
+    color: #D1FFD1;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projeto-card {
+    background: #0C2C0C;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.projeto-card h3 {
+    margin: 15px 0 10px 0;
+}
+
+.projeto-card p {
+    padding: 0 10px;
+}
